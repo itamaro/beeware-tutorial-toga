@@ -2,6 +2,7 @@
 My first application
 """
 
+import asyncio
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
@@ -34,7 +35,8 @@ class HelloWorld(toga.App):
         self.main_window.content = main_box
         self.main_window.show()
 
-    def say_hello(self, widget, **kwargs):
+    async def say_hello(self, widget, **kwargs):
+        await asyncio.sleep(5)
         self.main_window.info_dialog(
             f"Hello, {self.name_input.value or "stranger"}",
             "Hi there!"

@@ -8,6 +8,7 @@ license.file = "LICENSE"
 author = "Jane Developer"
 author_email = "jane@example.com"
 icon = "icons/helloworld"
+splash_background_color = "#D3E6F5"
 
 [tool.briefcase.app.helloworld]
 formal_name = "Hello World"

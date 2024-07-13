@@ -9,6 +9,7 @@ author = "Jane Developer"
 author_email = "jane@example.com"
 icon = "icons/helloworld"
 splash_background_color = "#D3E6F5"
+permission.camera = "App will take mugshots."
 
 [tool.briefcase.app.helloworld]
 formal_name = "Hello World"

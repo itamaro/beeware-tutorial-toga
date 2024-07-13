@@ -36,7 +36,7 @@ class HelloWorld(toga.App):
 
     def say_hello(self, widget, **kwargs):
         self.main_window.info_dialog(
-            f"Hello, {self.name_input.value}",
+            f"Hello, {self.name_input.value or "stranger"}",
             "Hi there!"
         )
 

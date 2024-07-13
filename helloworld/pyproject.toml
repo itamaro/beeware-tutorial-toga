@@ -7,6 +7,7 @@ url = "https://example.com/helloworld"
 license.file = "LICENSE"
 author = "Jane Developer"
 author_email = "jane@example.com"
+icon = "icons/helloworld"
 
 [tool.briefcase.app.helloworld]
 formal_name = "Hello World"

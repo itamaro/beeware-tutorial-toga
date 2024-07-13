@@ -38,7 +38,7 @@ class HelloWorld(toga.App):
     async def say_hello(self, widget, **kwargs):
         await asyncio.sleep(5)
         self.main_window.info_dialog(
-            f"Hello, {self.name_input.value or "stranger"}",
+            f"Hello, {self.name_input.value or 'stranger'}",
             "Hi there!"
         )
 

@@ -48,7 +48,7 @@ class HelloWorld(toga.App):
     async def say_hello(self, widget, **kwargs):
         await asyncio.sleep(5)
         self.main_window.info_dialog(
-            f"Hello, {self.name_input.value or 'stranger'}",
+            greeting(self.name_input.value),
             "Hi there!"
         )
 
@@ -70,6 +70,10 @@ class HelloWorld(toga.App):
                 "Oh no!",
                 "You have not granted permission to take photos",
             )
+
+
+def greeting(name):
+    return f"Hello, {name or 'stranger'}"
 
 
 def main():

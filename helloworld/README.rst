@@ -10,3 +10,41 @@ My first application
 .. _`Briefcase`: https://briefcase.readthedocs.io/
 .. _`The BeeWare Project`: https://beeware.org/
 .. _`becoming a financial member of BeeWare`: https://beeware.org/contributing/membership
+
+## Tutorial Log
+
+```
+python3 -m venv beewarenv
+source beewarenv/bin/activate
+python -m pip install briefcase
+briefcase --version
+briefcase new
+cd helloworld
+briefcase dev -vv
+
+## macOS app
+briefcase create
+briefcase build
+briefcase run
+briefcase package --adhoc-sign
+
+## update or run and update
+briefcase update
+briefcase run -u
+briefcase update --update-resources
+
+## android
+briefcase create android
+briefcase build android
+briefcase run android --update-resources
+briefcase package android --adhoc-sign
+
+## web
+briefcase create web
+briefcase build web
+briefcase run web -u
+
+## test
+briefcase dev --test -r
+briefcase run Android --test -r
+```

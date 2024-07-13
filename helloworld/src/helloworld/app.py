@@ -73,6 +73,8 @@ class HelloWorld(toga.App):
 
 
 def greeting(name):
+    if name == "Brutus":
+        return "BeeWare the IDEs of Python!"
     return f"Hello, {name or 'stranger'}"
 
 
